@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    
+    display: none;
+}
+
+.top-nav a {
+    color: #fff;
+}
+
+.fa-nav {
+    background: #272a31;
+    color: #fff;
+}
+
+.bottom-nav {
+    background: #fff;
+    padding: 1.5% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    color: #272a31;
+}
+
+.links {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #272a31;
+    margin: 4px auto;;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 5%;
+    margin: 5% 0;
+}
+
+.headline .message {
+    background: url(images/wall-bg.jpeg) no-repeat center center/cover;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #ec5242;
+
+}
+
+.headline .primary-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    color: #ec5242;
+}
+
+.headline .secondary-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.headline .date-venue {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+    color: #272a31;
+}
+
+.headline .date-span {
+    font-weight: 400;
+    
+}
+
+.main-program {
+    background: #272a31;
+    color: #fff;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-program .main-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 5vw;
+    text-align: center;
+    padding: 10% 0;
+    margin-bottom: 3%;
+    position: relative
+}
+
+.main-program .main-heading::after {
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #ec5242;
+    left: 43%;
+    bottom: 45px;
+    position: absolute;
+}
+
+.main-program .program-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.main-program article {
+    background: #3b3e46;
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    gap: 5%;
+    border: none;
+}
+
+.main-program .fa {
+    font-size: 5vw;
+}
+
+.main-program .pri-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 5vw; 
+    color: #ec5242 
+}
+
+.main-program .sec-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4vw; 
+    color: #fff; 
+}
+
+.main-program .see-more {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4vw; 
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding: 8% 0;
+    margin-bottom: 4%;
+}
+
+.performances {
+    background: #fff;
+}
+
+.performances .performance-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 6vw; 
+    text-align: center;
+    padding: 5% 0;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.performances .performance-title::after {
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #ec5242;
+    left: 41%;
+    bottom: 13px;
+    position: absolute;
+}
+
+.performances .performers {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-auto-rows: auto;
+    row-gap: 2rem;
+    
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.performers article {
+    border: 1px solid #272a31;
+}
+
+.performances img {
+    width: 100%;
+    /* max-width: 7rem;
+    height: 7rem; */
+}
+
+.performances .group-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5%;
+}
+
+.performances .group-name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    padding: 1.5% 0;
+    color: #272a31;
+    
+}
+
+.performances .group-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    padding: 1% 0;
+    font-style: italic;
+    color: #ec5242; 
+    
+}
+
+.performances .desc {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    padding: 1.5% 0;
+    font-style: normal;
+    margin-bottom: 1%; 
+    
+}
+
+.partner {
+    background: #272a31;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+}
+
+.partner .partner-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 5vw;
+    padding: 0 10%;
+    font-style: normal; 
+    text-align: center;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.partner .partner-heading::after {
+    content: '';
+    width: 7%;
+    height: 3px;
+    background: #ec5242;
+    left: 46%;
+    bottom: -10px;
+    position: absolute;
+}
+
+
+.partner .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    padding: 3% 10%;
+    font-style: normal;
+    
+}
+
+.footer {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .footer-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    font-style: normal; 
+    margin-bottom: 3%;
+}
+
+.footer .footer-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    font-style: normal;
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 768px) {
+    .top-nav {
+        display: block;
+        background: #272a31;
+    padding: 1% 10%;
+    height: 3.5vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5vw;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .links {
+        width: 60%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        
+    }
+
+    .links li {
+        padding: .5rem;
+    }
+
+    .links .last {
+        border: 3px solid #ec5242;
+
+    }
+
+    .links .last a {
+        color: #ec5242;
+    }
+
+    .links a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: #272a31; 
+    }
+
+    .bottom-nav {
+        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .headline {
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    .headline .message {
+        height: 25vh;
+        font-size: 2vw;
+        padding: 0 10%;
+    
+    }
+
+    .headline .primary-text {
+        padding: 0 10%;
+        
+    }
+    
+    .headline .secondary-text {
+        padding: 0 10%;
+        width: 70%;
+        font-size: 1.5vw;
+    }
+    
+    .headline .date-venue {
+        padding: 0 10%;
+        font-size: 3vw;
+    }
+
+    .headline .date-span {
+        font-size: 2vw;
+    }
+
+    .main-program .main-heading {
+        
+        font-size: 3vw;
+        
+    }
+
+    .main-program .main-heading::after {
+        bottom: 30%;
+    }
+
+    .main-program .program-articles {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .main-program article {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .main-program .fa {
+        font-size: 3vw;
+        margin-bottom: 4%;
+    }
+    
+    .main-program .pri-text {
+        margin-bottom: 2%;
+        font-size: 1vw; 
+        
+    }
+    
+    .main-program .sec-text {
+        margin-bottom: 2%;
+        font-size: 1vw; 
+        
+    }
+
+    .main-program .see-more {
+        
+        font-size: 1.5vw; 
+        
+    }
+
+    .performances .performance-title {
+        
+        font-size: 2.5vw; 
+        
+    }
+
+    .performances .performance-title::after {
+        bottom: 25%;
+        left: 43%;
+    }
+
+    .performances .performers {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        
+        row-gap: 2rem;
+        column-gap: 2rem;
+        
+        /* justify-content: center;
+        margin-bottom: 2rem; */
+    }
+
+    .performers article {
+        display: flex;
+        flex-direction: row;
+        border: none;
+    }
+    .performances img {
+        width: 50%;
+        
+    }
+
+    .performances .group-info {
+        /* max-height: 20%; */
+    }
+
+    .performances .group-name {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 1vw;
+        padding: 1.5% 0;
+        color: #272a31;
+        
+    }
+    
+    .performances .group-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1vw;
+        padding: 1% 0;
+        font-style: italic;
+        color: #ec5242; 
+        
+    }
+    
+    .performances .desc {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1vw;
+        padding: 1.5% 0;
+        font-style: normal;
+        margin-bottom: 1%; 
+        
+    }
+
+    .partner .partner-heading {
+        
+        font-size: 2.5vw;
+        
+    }
+    
+    .partner .partner-heading::after {
+        
+        width: 3%;
+        
+        left: 48%;
+        
+    }
+
+    .partner .partners {
+        
+        font-size: 1.5vw;
+    
+    }
+
+    .footer {
+        padding: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+    }
+    
+    .footer .footer-logo {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 1.3vw;
+        font-style: normal; 
+        margin-bottom: 3%;
+    }
+    
+    .footer .footer-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.2vw;
+        font-style: normal;
+    }
+}
