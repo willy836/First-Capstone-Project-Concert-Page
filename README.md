@@ -13,7 +13,10 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://willy836.github.io/First-Capstone-Project-Concert-Page/)
+
+## Project Presentation
+[Project Presentation Link](https://www.loom.com/share/e553bc7e41b444ceb78334d0f1a7c287)
 
 
 ## Getting Started
@@ -56,9 +59,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+This project design was inspired by a design from Creative Commons on an online website for a conference.
+[Creative Commons Online Website for a Conference Link](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 
