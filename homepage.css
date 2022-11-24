@@ -30,8 +30,6 @@
   justify-content: space-between;
 }
 
-
-
 .logo {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -420,7 +418,7 @@ hr {
     align-items: center;
   }
 
-  .bottom-nav .links li {
+  .bottom-nav .links .link {
     padding: 0.5rem;
   }
 
@@ -440,7 +438,9 @@ hr {
     text-decoration: none;
   }
 
-
+  .bottom-nav .links a:hover {
+    color: #ec5242;
+  }
 
   .headline {
     padding-top: 15%;
