@@ -87,6 +87,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
     })
     .join('');
     performers.innerHTML = performersString;
-    
-
 })
+
+const year = document.querySelector('.year');
+year.innerHTML = new Date().getFullYear();
