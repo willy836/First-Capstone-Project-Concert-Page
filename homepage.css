@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap');
-
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 .header {
@@ -27,11 +24,6 @@
     color: #fff;
 }
 
-.fa-nav {
-    background: #272a31;
-    color: #fff;
-}
-
 .bottom-nav {
     background: #fff;
     padding: 0 10%;
@@ -44,7 +36,7 @@
     font-weight: 400;
     font-size: .5vw;
     color: #272a31;
-    display: flex;
+    display: none;
     gap: 3%;
 }
 
@@ -53,10 +45,6 @@
 }
 
 .logo-text {
-    display: none;
-}
-
-.links {
     display: none;
 }
 
@@ -81,22 +69,27 @@
     transform: translateY(5px) rotate(45deg);
     background: #67798e;
     position: fixed;
+    
     z-index: 2;
+    
   }
   
   .active .bar:nth-child(3) {
     transform: translateY(-5px) rotate(-45deg);
     background: #67798e;
     position: fixed;
+    
     z-index: 2;
+    
   }
 
-  .links {
+
+.links {
     list-style: none;
     height: 0;
     overflow: hidden;
   }
-  
+
   .show-links {
     height: 100vh;
     width: 100%;
@@ -114,34 +107,43 @@
     flex-direction: column;
     gap: 10%;
     transition: all 0.5s;
-    z-index:1;
+    z-index: 1;
   }
 
   .show-links a {
     color: #fff;
+    text-decoration: none;
   }
 
   .show-links .logo {
     font-weight: 700;
     font-size: 5vw;
     line-height: 60%;
+    
   }
 
   .blur {
     filter: blur(5px);
   }
 
+.bottom-nav {
+    padding: 0 5%;
+}
+
+.logo {
+    display: none;
+}
+
 .headline {
+    background: #f8f9fa;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 5%;
-    margin: 5% 0;
+    padding: 5%;
 }
 
 .headline .message {
-    background: url(images/wall-bg.jpeg) no-repeat center center/cover;
-    height: 15vh;
+    height: 7vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -149,184 +151,178 @@
     font-weight: 400;
     font-size: 4vw;
     color: #ec5242;
-
+    text-align: center;
+    background: #f8f9fa;
 }
 
 .headline .primary-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 6.5vw;
     color: #ec5242;
+    text-align: center;
+    padding: 0 0 10% 0;
 }
 
-.headline .secondary-text {
+.headline .secondary-text-mob {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    line-height: 5vw;
+    text-align: center;
+    background: #fff;
+    padding: 4% 2%;
+}
+
+.headline .secondary-text-desk {
+    display: none;
 }
 
 .headline .date-venue {
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 4vw;
-    color: #272a31;
-}
-
-.headline .date-span {
     font-weight: 400;
-    
-}
-
-.main-program {
-    background: #272a31;
-    color: #fff;
-    padding: 0 5%;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.main-program .main-heading {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 5vw;
+    font-size: 3vw;
+    line-height: 5vw; 
+    padding: 0 7%;
     text-align: center;
-    padding: 10% 0;
-    margin-bottom: 3%;
-    position: relative
 }
 
-.main-program .main-heading::after {
-    content: '';
-    width: 10%;
-    height: 3px;
-    background: #ec5242;
-    left: 43%;
-    bottom: 25px;
-    position: absolute;
-}
-
-.main-program .program-articles {
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-}
-
-.main-program article {
-    background: #3b3e46;
-    display: flex;
-    padding: 3%;
-    align-items: center;
-    gap: 5%;
-    border: none;
-}
-
-.main-program .fa {
-    font-size: 5vw;
-}
-
-.main-program .pri-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 5vw; 
-    color: #ec5242 
-}
-
-.main-program .sec-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 4vw; 
-    color: #fff; 
-}
-
-.main-program .see-more {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 4vw; 
-    color: #fff;
-    text-align: center;
+.headline .email {
     text-decoration: underline;
-    text-transform: uppercase;
-    padding: 8% 0;
-    margin-bottom: 4%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#272a31;
 }
 
-.performances {
-    background: #fff;
+.company-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
 }
 
-.performances .performance-title {
+.company-logo .logo-heading {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 6vw; 
+    font-size: 6vw;
     text-align: center;
-    padding: 5% 0;
-    margin-bottom: 2%;
+    line-height: 7vw;
+    margin: 10% 0;
     position: relative;
+    
 }
 
-.performances .performance-title::after {
+.company-logo .logo-heading::after {
     content: '';
     width: 10%;
     height: 3px;
     background: #ec5242;
     left: 41%;
-    bottom: 13px;
+    bottom: -15px;
     position: absolute;
 }
 
-.performances .performers {
-    display: grid;
-    grid-template-columns: 80%;
-    grid-auto-rows: auto;
-    row-gap: 2rem;
-    
-    justify-content: center;
-    margin-bottom: 2rem;
+.company-logo .logo-text-desk {
+    display: none;
 }
 
-.performers article {
-    border: 1px solid #272a31;
+.company-logo .logo-text-mob {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4vw; 
+    line-height: 6vw;
 }
 
-.performances img {
+.company-logo .company-logo-img {
     width: 100%;
     
 }
 
-.performances .group-info {
+hr {
+    margin: 10% 0;
+    border: 0;
+    height: 1px;
+    background: #e9ecef;
+}
+
+.past-events {
     display: flex;
     flex-direction: column;
-    padding: 0 1.5%;
+    padding: 0 5%;
 }
 
-.performances .group-name {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 5vw;
-    padding: 1.5% 0;
-    color: #272a31;
+.past-events .past-events-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 8%;
+    position: relative;
+}
+
+.past-events .past-events-heading::after {
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #ec5242;
+    left: 41%;
+    bottom: -10px;
+    position: absolute;  
+}
+
+.past-events .past-events-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    line-height: 5vw;
+}
+
+.past-events .past-festivals {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    row-gap: 1.6rem;
+    justify-content: center;
+    margin: 13% 0;
+}
+
+.past-events .festival-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  
+}
+
+.past-events .festival-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.past-events .div-img {
+    position: relative;
+}
+
+.past-events img {
+    width: 100%;
+    filter: brightness(.3) hue-rotate(15deg)
     
 }
 
-.performances .group-title {
-    font-family: 'Lato', sans-serif;
+.past-events .fest-text {
+    position: absolute;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 4vw;
-    padding: 1% 0;
-    font-style: italic;
-    color: #ec5242; 
-    
+    color: #fff;
+    text-align: center;
 }
 
-.performances .desc {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 4vw;
-    padding: 1.5% 0;
-    font-style: normal;
-    margin-bottom: 1%; 
-    
+.past-events .para {
+    font-size: 8vw;
+    font-weight: 600;
+    margin-bottom: 5%;
 }
 
 .partner {
@@ -372,6 +368,10 @@
     
 }
 
+.partner .partners p {
+    padding: 4% 1%;
+}
+
 .footer {
     padding: 10%;
     display: flex;
@@ -411,11 +411,17 @@
     font-size: 1rem;
     }
 
-    .logo {
-        font-size: 1.5vw;
+    .top-nav .fa-nav {
+        background: #272a31;
+        color: #fff;
     }
 
-    .logo-text {
+    .top-nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .logo {
         display: block;
     }
 
@@ -443,6 +449,7 @@
 
     .links .last a {
         color: #ec5242;
+        
     }
 
     .links a {
@@ -450,6 +457,7 @@
         font-weight: 400;
         font-size: 1.2vw;
         color: #272a31; 
+        text-decoration: none;
     }
 
     .bottom-nav {
@@ -457,208 +465,186 @@
     }
 
     .headline {
-        padding: 0;
-        margin-bottom: 10%;
+        padding-top: 15%;
+        
     }
 
     .headline .message {
-        height: 25vh;
-        font-size: 2vw;
-        padding: 0 10%;
-    
+        display: none;
     }
 
-    .headline .primary-text {
-        padding: 0 10%;
-        
-    }
-    
-    .headline .secondary-text {
-        padding: 0 10%;
-        width: 70%;
-        font-size: 1.5vw;
-    }
-    
-    .headline .date-venue {
-        padding: 0 10%;
-        font-size: 3vw;
-    }
-
-    .headline .date-span {
-        font-size: 2vw;
-    }
-
-    .main-program .main-heading {
-        
-        font-size: 3vw;
-        
-    }
-
-    .main-program .main-heading::after {
-        bottom: 30%;
-        width: 4%;
-        left: 47%;
-    }
-
-    .main-program .program-articles {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2%;
-    }
-
-    .main-program article {
-        width: 18%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-    }
-
-    .main-program .fa {
-        font-size: 3vw;
-        margin-bottom: 4%;
-    }
-    
-    .main-program .pri-text {
-        margin-bottom: 2%;
-        font-size: 1vw; 
-        
-    }
-    
-    .main-program .sec-text {
-        margin-bottom: 2%;
-        font-size: 1vw; 
-        
-    }
-
-    .main-program .see-more {
-        
-        font-size: 1.5vw; 
-        
-    }
-
-    .performances .performance-title {
-        
-        font-size: 2.5vw; 
-        
-    }
-
-    .performances .performance-title::after {
-        bottom: 25%;
-        left: 47%;
+    .headline .primary-text::after {
+        content: '';
         width: 5%;
+        height: 3px;
+        background: #ec5242;
+        left: 50%;
+        bottom: 7%;
+        position: absolute; 
     }
 
-    .performances .performers {
-        display: grid;
-        grid-template-columns: 40% 40%;
-        
-        row-gap: 2rem;
-        column-gap: 2rem;
-        
-        
+    .headline .secondary-text-desk {
+        display: block;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        background: #fff;
+        padding: 3% 5%;
+        margin-bottom: 3%;
     }
 
-    .performers article {
-        display: flex;
-        flex-direction: row;
-        border: none;
+    .headline .secondary-text-mob {
+        display: none;
     }
-    .performances img {
+
+    .headline .date-venue {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 3vw; 
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .headline .email {
+        text-decoration: underline;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color:#272a31;
+    }
+
+    .company-logo .logo-heading {
+        
+        font-size: 3vw;
+        
+        line-height: 4vw;
+        margin: 5% 0;   
+    }
+
+    .company-logo .logo-heading::after {
+        
+        width: 5%;
+        
+        left: 45%;
+    
+    }
+    
+    .company-logo .logo-text-mob {
+        display: none;
+    }
+    
+    .company-logo .logo-text-desk {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.5vw; 
+        line-height: 2.5vw;
+    }
+    
+    .company-logo .company-logo-img {
         width: 50%;
         
     }
 
-    
+    .company-logo .company-logo-div-img {
+        text-align: center;
+    }
 
-    .performances .group-name {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 1vw;
-        padding: 1.5% 0;
-        color: #272a31;
+    hr {
+        margin-top: 0;
         
+        height: 2px;
+    }
+
+    .past-events .past-events-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: 8%;
+        position: relative;
     }
     
-    .performances .group-title {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 1vw;
-        padding: 1% 0;
-        font-style: italic;
-        color: #ec5242; 
+    .past-events .past-events-heading::after {
+        
+        width: 5%;
+        
+        left: 45%;
+        bottom: -20px;
+          
+    }
+    
+    .past-events .past-events-text {
+        font-size: 1.5vw;
+        line-height: 3vw;
+        text-align: center;
+    }
+
+    .past-events .past-festivals {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        row-gap: 1.6rem;
+        column-gap: 1.5rem;
+        justify-content: center;
+        width: 80%;
+        margin: 5% auto;
+        margin-bottom: 10%;
+    }
+    
+    .past-events .fest-text {
+        
+        width: 35%;
+        margin: 0 auto;
+        
+        font-size: 1.2vw;
+        
+       
         
     }
     
-    .performances .desc {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 1vw;
-        padding: 1.5% 0;
-        font-style: normal;
-        margin-bottom: 1%; 
-        
-    }
-
-    .partner {
-        
-        padding: 1.5% 0;
-    }
-
-
-    .partner .partner-heading {
-        margin-bottom: 1%;
+    .past-events .para {
         font-size: 2.5vw;
         
     }
     
-    .partner .partner-heading::after {
-        
-        width: 3%;
-        
-        left: 48%;
-        
-    }
-
-    .partner .partners {
-        
-        font-size: 1.5vw;
     
-    }
 
     .footer {
-        padding: 6%;
+        padding: 5%;
         display: flex;
         flex-direction: row;
-        gap: 5%;
         justify-content: center;
         align-items: center;
+        gap: 4%;
+        background: #272a31;
+        color: #fff;
+        
+        
     }
     
     .footer .footer-logo {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
-        font-size: 1.3vw;
+        font-size: 2vw;
         font-style: normal; 
         margin-bottom: 0;
+        
     }
     
     .footer .footer-text {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         font-style: normal;
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
