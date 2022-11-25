@@ -128,16 +128,13 @@
 
 .headline {
   background: url(images/bg-img.jpg) no-repeat center center/cover;
-  
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 5%;
-  
 }
 
 .headline .message {
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -217,7 +214,6 @@
 .main-program .fa {
   font-size: 5vw;
   width: 8%;
-  
 }
 
 .main-program .pri-text {
@@ -226,7 +222,6 @@
   font-size: 3.5vw;
   color: #ec5242;
   width: 22%;
-  
 }
 
 .main-program .sec-text {
@@ -247,7 +242,6 @@
   text-decoration: none;
   background: #ec5242;
   padding: 6% 0;
-  
   width: 75%;
   margin: 12% auto;
 }
@@ -290,10 +284,8 @@
 }
 
 .performers article {
-  
   display: flex;
   gap: 5%;
-  
 }
 
 .performances img {
@@ -305,7 +297,6 @@
 .performances .group-info {
   display: flex;
   flex-direction: column;
-  
   width: 55%;
 }
 
@@ -383,7 +374,6 @@
   justify-content: center;
   align-items: center;
   gap: 6%;
-  
 }
 
 .footer .footer-logo {
@@ -391,8 +381,6 @@
   font-weight: 700;
   font-size: 3vw;
   font-style: normal;
-  
-  
 }
 
 .footer .footer-text {
@@ -400,8 +388,6 @@
   font-weight: 400;
   font-size: 2.5vw;
   font-style: normal;
-  
-  
 }
 
 /* DESKTOP STYLES */
@@ -417,7 +403,7 @@
     gap: 2vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: .9vw;
+    font-size: 0.9vw;
   }
 
   .logo {
@@ -472,7 +458,6 @@
 
   .headline {
     padding-bottom: 10%;
-    
   }
 
   .headline .message {
@@ -502,14 +487,11 @@
     font-size: 1.3vw;
   }
 
-  .main-program .main-heading{
+  .main-program .main-heading {
     padding: 3% 0;
     font-size: 2vw;
     margin-bottom: 1%;
-    
   }
-
-  
 
   .main-program .main-heading::after {
     bottom: 20%;
@@ -545,15 +527,13 @@
 
   .main-program .sec-text {
     margin-bottom: 2%;
-    font-size: .8vw;
+    font-size: 0.8vw;
     width: 100%;
   }
 
   .main-program .see-more {
     font-size: 1.5vw;
-    
   }
-  
 
   .main-program .mobile {
     display: none;
@@ -606,7 +586,7 @@
   .performances .group-title {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: .9vw;
+    font-size: 0.9vw;
     padding: 1% 0;
     font-style: italic;
     color: #ec5242;
@@ -615,7 +595,7 @@
   .performances .desc {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: .8vw;
+    font-size: 0.8vw;
     padding: 1.5% 0;
     font-style: normal;
     margin-bottom: 1%;
@@ -641,27 +621,15 @@
 
   .footer {
     padding: 6%;
-    
     gap: 5%;
-    
-    
   }
 
   .footer .footer-logo {
-
     font-size: 1.3vw;
-    
     margin-bottom: 0;
-    
-    
   }
 
   .footer .footer-text {
-    
     font-size: 1.2vw;
-    
-    
-    
-    
   }
 }

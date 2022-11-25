@@ -231,10 +231,8 @@
 
 .company-logo .company-logo-img {
   width: 60%;
-  
   display: block;
   margin: 0 auto;
-  
 }
 
 hr {
@@ -308,10 +306,12 @@ hr {
 
 .past-events .fest-text {
   position: absolute;
-  width: 80%;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #fff;
   text-align: center;
 }
@@ -321,24 +321,11 @@ hr {
   font-weight: 600;
   width: 90%;
   margin-bottom: 5%;
-  
-}
-
-.past-events .fest-text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  font-size: 1.2vw;
 }
 
 .past-events .para2 {
   width: 90%;
-  
   font-size: 3vw;
-  
-  
 }
 
 .partner {
@@ -424,7 +411,7 @@ hr {
     gap: 2vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: .9vw;
+    font-size: 0.9vw;
   }
 
   .top-nav .fa-nav {
@@ -498,8 +485,6 @@ hr {
   .headline .primary-text::after {
     display: block;
     width: 2.5%;
-    
-    
   }
 
   .headline .secondary-text-desk {
@@ -509,7 +494,7 @@ hr {
     font-weight: 400;
     width: 60%;
     margin: 0 auto;
-    font-size: .9vw;
+    font-size: 0.9vw;
     line-height: 1.5vw;
     background: #fff;
     padding: 1.5% 5%;
@@ -594,12 +579,8 @@ hr {
     bottom: -100%;
   }
 
-  
-
-  
-
   .past-events .past-events-text {
-    font-size: .9vw;
+    font-size: 0.9vw;
     line-height: 3vw;
     text-align: center;
   }
@@ -613,32 +594,24 @@ hr {
     justify-content: center;
     width: 60%;
     margin: 3% auto;
-    
     margin-bottom: 7%;
   }
-
-  
 
   .past-events .fest-text {
     width: 25.6%;
     margin: 0 auto;
     font-size: 1.2vw;
-    
   }
 
   .past-events .para {
     font-size: 2vw;
     width: 100%;
-    
   }
 
   .past-events .para2 {
-    font-size: .8vw;
+    font-size: 0.8vw;
     width: 100%;
-    
   }
-
-  
 
   .partner {
     display: none;
@@ -662,7 +635,6 @@ hr {
     font-style: normal;
     margin-bottom: 0;
     width: fit-content;
-    
   }
 
   .footer .footer-text {
@@ -671,6 +643,5 @@ hr {
     font-size: 1vw;
     font-style: normal;
     width: fit-content;
-    
   }
 }
