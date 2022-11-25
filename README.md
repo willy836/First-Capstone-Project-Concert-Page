@@ -59,8 +59,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-This project design was inspired by a design from Creative Commons on an online website for a conference.
-[Creative Commons Online Website for a Conference Link](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+This project design was inspired by a Behance design created by Cindy Chin on an online website for a conference.
+[Link to Cindy Chin design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 

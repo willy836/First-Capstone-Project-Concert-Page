@@ -30,16 +30,15 @@ const performersData = [
     groupTitle: 'Representatives of Central Region in Cultural Performances',
     desc: `Central drama group is known for its brilliant performances 
         in drama and cultural dances. Since making their debut in 2010, they have gained 
-        massive recognition and continues to compete at national level.`,
+        massive recognition `,
   },
   {
     img: './images/eastern.jpeg',
-    groupName: 'Eastern women drama group',
+    groupName: 'Eastern drama group',
     groupTitle: 'Representatives of Eastern Region in Cultural Performances',
     desc: `Eastern women drama group is the total bomb. This group of actresses has 
         featured among the most talented actresses in Kenya for five years in a row. The Eastern 
-        women drama group leaves its audience always wanting more because of their scintillating 
-        performances.`,
+        women `,
   },
   {
     img: './images/kisii.jpeg',
@@ -47,23 +46,21 @@ const performersData = [
     groupTitle: 'Representatives of Nyanza Region in Cultural Performances',
     desc: `Nyanza drama starlets comprises of young and talented women. This group 
         is best known for its domination in the inter-county drama competitions. Majority 
-        of the women in this group are also great dancers and have careers in modelling.`,
+        of the women `,
   },
   {
     img: './images/turkana.jpeg',
-    groupName: 'The North drama group',
+    groupName: 'North drama group',
     groupTitle: 'Representatives of Northern Region in Cultural Performances',
     desc: `The North drama group comprises of enthusiastic men and women who began their 
-        acting and dancing in 2010. They gained popularity in 2018 and have since become one 
-        of the most loved group by the audience for their performances.`,
+        acting and dancing in 2010. They gained popularity in 2018 and have since`,
   },
   {
     img: './images/isiolo.jpeg',
     groupName: 'Western drama group',
     groupTitle: 'Representatives of Western Region in Cultural Performances',
     desc: `Western drama group is made up of talented men and women who made 
-        their acting debut in the early 2000s. They have stayed dedicated to cultural performances 
-        and they are always among the contenders for the top position in annual cultural festivals.`,
+        their acting debut in the early 2000s. They have stayed dedicated to cultural performances `,
   },
 ];
 
