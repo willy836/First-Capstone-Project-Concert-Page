@@ -62,8 +62,8 @@
 
 .bar {
   display: block;
-  width: 20px;
-  height: 2px;
+  width: 8vw;
+  height: 1.2vw;
   background: #272a31;
   margin: 4px auto;
 }
@@ -73,14 +73,14 @@
 }
 
 .active .bar:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
+  transform: translateY(6.5px) rotate(45deg);
   background: #67798e;
   position: fixed;
   z-index: 2;
 }
 
 .active .bar:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-6.5px) rotate(-45deg);
   background: #67798e;
   position: fixed;
   z-index: 2;
